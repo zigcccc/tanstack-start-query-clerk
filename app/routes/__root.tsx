@@ -8,8 +8,12 @@ import { Body, createServerFn, Head, Html, json, Meta, Scripts } from '@tanstack
 import { Suspense, type PropsWithChildren } from 'react'
 
 const fetchClerkAuth = createServerFn('GET', async (_, ctx) => {
-  const user = await getAuth(ctx.request)
-  return json(user)
+  try {
+    const user = await getAuth(ctx.request)
+    return json(user)
+  } catch {
+    return {} as ReturnType<Awaited<typeof getAuth>>;
+  }
 })
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -25,10 +29,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       title: 'TanStack Start + Clerk',
     },
   ],
-  beforeLoad: async ({ context }) => {
+  beforeLoad: async () => {
     const auth = await fetchClerkAuth();
+
     return {
-      // ...context,
       auth,
     };
   },

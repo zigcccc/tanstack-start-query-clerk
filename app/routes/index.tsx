@@ -4,7 +4,7 @@ import { queryOptions, useQueryClient, useSuspenseQuery } from '@tanstack/react-
 import { SignIn, useClerk, useUser } from '@clerk/tanstack-start'
 import { getAuth } from '@clerk/tanstack-start/server'
 
-import { UnauthenticatedError } from '@/utils/errors'
+import { ApiRequestError, UnauthenticatedError } from '@/utils/errors'
 
 const fetchTodos = createServerFn('GET', async (_, ctx) => {
   const auth = await getAuth(ctx.request);
@@ -17,7 +17,7 @@ const fetchTodos = createServerFn('GET', async (_, ctx) => {
   const response = await fetch(process.env.VITE_API_URL + '/todos/', { headers: new Headers({ Authorization: `Bearer ${token}` })});
 
   if (!response.ok) {
-    throw new Error(`${response.statusText} (${response.status})`);
+    throw new ApiRequestError(response);
   }
 
   return response.json();
