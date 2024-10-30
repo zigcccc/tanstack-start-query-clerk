@@ -4,5 +4,7 @@
   "semi": true,
   "tabWidth": 2,
   "useTabs": false,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["tv"]
 }

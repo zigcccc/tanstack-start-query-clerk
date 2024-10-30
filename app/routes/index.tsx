@@ -3,7 +3,10 @@ import { getAuth } from '@clerk/tanstack-start/server';
 import { queryOptions, useQueryClient, useSuspenseQuery } from '@tanstack/react-query';
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/start';
+import { LogOutIcon } from 'lucide-react';
+import { Fragment } from 'react/jsx-runtime';
 
+import { Button } from '@/components/atoms';
 import { ApiRequestError, UnauthenticatedError } from '@/utils/errors';
 
 const fetchTodos = createServerFn('GET', async (_, ctx) => {
@@ -71,11 +74,12 @@ function Home() {
   return (
     <>
       {authUser.isSignedIn && (
-        <>
-          <p>Hello {authUser.user?.fullName}</p>
-          {/* <SignOutButton redirectUrl='/' /> */}
-          <button onClick={handleSignOut}>Sign out</button>
-        </>
+        <div className="flex items-center justify-between border-b border-b-slate-300 p-3">
+          <p className="text-lg text-slate-800">Hello {authUser.user?.fullName}</p>
+          <Button iconAfter={LogOutIcon} intent="strong" onPress={handleSignOut} size="sm" variant="faded">
+            Sign out
+          </Button>
+        </div>
       )}
       <div className="text-xl" style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 12 }}>
         {todosQuery.data?.data.map((todo: any) => (
