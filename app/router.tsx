@@ -1,9 +1,9 @@
-import { createRouter as createTanStackRouter, ErrorComponent } from '@tanstack/react-router'
-import { QueryClient } from '@tanstack/react-query'
-import { routerWithQueryClient } from '@tanstack/react-router-with-query'
+import { QueryClient } from '@tanstack/react-query';
+import { createRouter as createTanStackRouter, ErrorComponent } from '@tanstack/react-router';
+import { routerWithQueryClient } from '@tanstack/react-router-with-query';
 
-import { NotFound } from './components/NotFound'
-import { routeTree } from './routeTree.gen'
+import { NotFound } from './components/NotFound';
+import { routeTree } from './routeTree.gen';
 
 export function createRouter() {
   const queryClient = new QueryClient();
@@ -20,6 +20,6 @@ export function createRouter() {
 
 declare module '@tanstack/react-router' {
   interface Register {
-    router: ReturnType<typeof createRouter>
+    router: ReturnType<typeof createRouter>;
   }
 }

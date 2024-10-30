@@ -1,10 +1,10 @@
-import { SignIn } from '@clerk/tanstack-start'
-import { getAuth } from '@clerk/tanstack-start/server'
-import { queryOptions, useSuspenseQuery } from '@tanstack/react-query'
-import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { createServerFn } from '@tanstack/start'
+import { SignIn } from '@clerk/tanstack-start';
+import { getAuth } from '@clerk/tanstack-start/server';
+import { queryOptions, useSuspenseQuery } from '@tanstack/react-query';
+import { createFileRoute, Link, notFound } from '@tanstack/react-router';
+import { createServerFn } from '@tanstack/start';
 
-import { ApiRequestError, UnauthenticatedError } from '@/utils/errors'
+import { ApiRequestError, UnauthenticatedError } from '@/utils/errors';
 
 const fetchSingleTodo = createServerFn('GET', async (todoId: string, ctx) => {
   const auth = await getAuth(ctx.request);
@@ -20,19 +20,20 @@ const fetchSingleTodo = createServerFn('GET', async (todoId: string, ctx) => {
 
   if (!response.ok) {
     if (response.status === 404) {
-      throw notFound()
+      throw notFound();
     }
 
     throw new ApiRequestError(response);
   }
 
   return response.json();
-})
+});
 
-const todoDetailsQueryOptions = (todoId: string) => queryOptions({
-  queryKey: ['todos', todoId],
-  queryFn: async () => fetchSingleTodo(todoId),
-})
+const todoDetailsQueryOptions = (todoId: string) =>
+  queryOptions({
+    queryKey: ['todos', todoId],
+    queryFn: async () => fetchSingleTodo(todoId),
+  });
 
 export const Route = createFileRoute('/todos/$todoId')({
   beforeLoad: ({ context }) => {
@@ -43,7 +44,9 @@ export const Route = createFileRoute('/todos/$todoId')({
   errorComponent: ({ error }) => {
     if (error.name === UnauthenticatedError.name) {
       return (
-        <div style={{ width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div
+          style={{ width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+        >
           <SignIn routing="hash" />
         </div>
       );
@@ -52,22 +55,22 @@ export const Route = createFileRoute('/todos/$todoId')({
     throw error;
   },
   loader: async ({ params, context }) => {
-    await context.queryClient.ensureQueryData(todoDetailsQueryOptions(params.todoId))
+    await context.queryClient.ensureQueryData(todoDetailsQueryOptions(params.todoId));
   },
   component: TodoDetails,
-  pendingComponent: () => <p>Loading from route config...</p>
-})
+  pendingComponent: () => <p>Loading from route config...</p>,
+});
 
 function TodoDetails() {
   const { todoId } = Route.useParams();
   const todoQuery = useSuspenseQuery(todoDetailsQueryOptions(todoId));
 
   if (todoQuery.isLoading) {
-    return <p>Loading from component...</p>
+    return <p>Loading from component...</p>;
   }
 
   if (todoQuery.isError) {
-    return <p>Oops, error...</p>
+    return <p>Oops, error...</p>;
   }
 
   return (
@@ -76,5 +79,5 @@ function TodoDetails() {
       <p>{todoQuery.data.description}</p>
       <Link to="/">Back to home</Link>
     </>
-  )
+  );
 }

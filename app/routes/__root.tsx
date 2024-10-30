@@ -1,22 +1,22 @@
-import { QueryDevtools } from '@/components/QueryDevTools'
-import { RouterDevtools } from '@/components/RouterDevTools'
-import { ClerkProvider, useAuth } from '@clerk/tanstack-start'
-import { getAuth } from '@clerk/tanstack-start/server'
-import { QueryClient } from '@tanstack/react-query'
-import { createRootRouteWithContext, Outlet, ScrollRestoration } from '@tanstack/react-router'
-import { Body, createServerFn, Head, Html, json, Meta, Scripts } from '@tanstack/start'
-import { Suspense, type PropsWithChildren } from 'react'
+import { ClerkProvider } from '@clerk/tanstack-start';
+import { getAuth } from '@clerk/tanstack-start/server';
+import { type QueryClient } from '@tanstack/react-query';
+import { createRootRouteWithContext, Outlet, ScrollRestoration } from '@tanstack/react-router';
+import { Body, createServerFn, Head, Html, json, Meta, Scripts } from '@tanstack/start';
+import { Suspense, type PropsWithChildren } from 'react';
+
+import { QueryDevtools, RouterDevtools } from '@/components/devtools';
 
 import appCss from '../main.css?url';
 
 const fetchClerkAuth = createServerFn('GET', async (_, ctx) => {
   try {
-    const user = await getAuth(ctx.request)
-    return json(user)
+    const user = await getAuth(ctx.request);
+    return json(user);
   } catch {
     return {} as ReturnType<Awaited<typeof getAuth>>;
   }
-})
+});
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   meta: () => [
@@ -31,9 +31,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       title: 'TanStack Start + Clerk',
     },
   ],
-  links: () => [
-    { rel: 'stylesheet', href: appCss }
-  ],
+  links: () => [{ rel: 'stylesheet', href: appCss }],
   beforeLoad: async () => {
     const auth = await fetchClerkAuth();
 
@@ -42,7 +40,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     };
   },
   component: RootComponent,
-})
+});
 
 function RootComponent() {
   return (
@@ -55,7 +53,7 @@ function RootComponent() {
         </Suspense>
       </RootDocument>
     </ClerkProvider>
-  )
+  );
 }
 
 function RootDocument({ children }: PropsWithChildren) {
@@ -70,5 +68,5 @@ function RootDocument({ children }: PropsWithChildren) {
         <Scripts />
       </Body>
     </Html>
-  )
+  );
 }
