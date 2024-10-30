@@ -55,7 +55,7 @@ export const Route = createFileRoute('/todos/$todoId')({
     await context.queryClient.ensureQueryData(todoDetailsQueryOptions(params.todoId))
   },
   component: TodoDetails,
-  pendingComponent: () => <p>Loading...</p>
+  pendingComponent: () => <p>Loading from route config...</p>
 })
 
 function TodoDetails() {
@@ -63,7 +63,7 @@ function TodoDetails() {
   const todoQuery = useSuspenseQuery(todoDetailsQueryOptions(todoId));
 
   if (todoQuery.isLoading) {
-    return <p>Loading...</p>
+    return <p>Loading from component...</p>
   }
 
   if (todoQuery.isError) {

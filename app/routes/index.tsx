@@ -75,7 +75,7 @@ function Home() {
           <button onClick={handleSignOut}>Sign out</button>
         </>
       )}
-      <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 12 }}>
+      <div className="text-xl" style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 12 }}>
         {todosQuery.data?.data.map((todo: any) => (
           <Link to="/todos/$todoId" params={{ todoId: todo.id }} key={todo.id}>{todo.title}</Link>
         ))}

@@ -7,6 +7,8 @@ import { createRootRouteWithContext, Outlet, ScrollRestoration } from '@tanstack
 import { Body, createServerFn, Head, Html, json, Meta, Scripts } from '@tanstack/start'
 import { Suspense, type PropsWithChildren } from 'react'
 
+import appCss from '../main.css?url';
+
 const fetchClerkAuth = createServerFn('GET', async (_, ctx) => {
   try {
     const user = await getAuth(ctx.request)
@@ -28,6 +30,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     {
       title: 'TanStack Start + Clerk',
     },
+  ],
+  links: () => [
+    { rel: 'stylesheet', href: appCss }
   ],
   beforeLoad: async () => {
     const auth = await fetchClerkAuth();
