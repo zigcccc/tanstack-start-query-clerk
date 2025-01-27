@@ -35,5 +35,5 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "tailwindCSS.experimental.classRegex": ["tv\\(([^)]*)\\)"]
+  "tailwindCSS.experimental.classRegex": ["tv\\(([^)]*)\\)","clsx\\(([^)]*)\\)"]
 }

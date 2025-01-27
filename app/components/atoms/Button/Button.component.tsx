@@ -26,9 +26,9 @@ export function Button({
 
   return (
     <button ref={ref} {...buttonProps} className={buttonStyles({ className, variant, intent, size })}>
-      {!!IconBefore && <IconBefore size={iconSize} />}
+      {!!IconBefore && <IconBefore data-testid="button--icon--before" size={iconSize} />}
       {children}
-      {!!IconAfter && <IconAfter size={iconSize} />}
+      {!!IconAfter && <IconAfter data-testid="button--icon--after" role="img" size={iconSize} />}
     </button>
   );
 }

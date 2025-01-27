@@ -1,72 +1,85 @@
-import { ClerkProvider } from '@clerk/tanstack-start';
-import { getAuth } from '@clerk/tanstack-start/server';
+import { ClerkProvider, useAuth } from '@clerk/tanstack-start';
+import { type ConvexQueryClient } from '@convex-dev/react-query';
 import { type QueryClient } from '@tanstack/react-query';
 import { createRootRouteWithContext, Outlet, ScrollRestoration } from '@tanstack/react-router';
-import { Body, createServerFn, Head, Html, json, Meta, Scripts } from '@tanstack/start';
+import { Meta, Scripts } from '@tanstack/start';
+import { Authenticated } from 'convex/react';
+import { ConvexProviderWithClerk } from 'convex/react-clerk';
 import { Suspense, type PropsWithChildren } from 'react';
+import { Toaster } from 'sonner';
 
+import { Actionbar, AppSidebar } from '@/components/blocks';
 import { QueryDevtools, RouterDevtools } from '@/components/devtools';
+import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
+import { authService } from '@/modules/auth';
 
 import appCss from '../main.css?url';
 
-const fetchClerkAuth = createServerFn('GET', async (_, ctx) => {
-  try {
-    const user = await getAuth(ctx.request);
-    return json(user);
-  } catch {
-    return {} as ReturnType<Awaited<typeof getAuth>>;
-  }
-});
-
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  meta: () => [
-    {
-      charSet: 'utf-8',
-    },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1',
-    },
-    {
-      title: 'TanStack Start + Clerk',
-    },
-  ],
-  links: () => [{ rel: 'stylesheet', href: appCss }],
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient; convexQueryClient: ConvexQueryClient }>()({
+  head: () => ({
+    meta: [
+      {
+        charSet: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        title: 'TanStack Start + Clerk + Convex',
+      },
+    ],
+    links: [{ rel: 'stylesheet', href: appCss }],
+  }),
   beforeLoad: async () => {
-    const auth = await fetchClerkAuth();
-
-    return {
-      auth,
-    };
+    const { userId } = await authService.getAuthUser();
+    return { userId };
   },
   component: RootComponent,
 });
 
 function RootComponent() {
+  const { convexQueryClient } = Route.useRouteContext();
+
   return (
     <ClerkProvider>
-      <RootDocument>
-        <Outlet />
-        <Suspense fallback={null}>
-          <QueryDevtools initialIsOpen={false} />
-          <RouterDevtools />
-        </Suspense>
-      </RootDocument>
+      <ConvexProviderWithClerk client={convexQueryClient.convexClient} useAuth={useAuth}>
+        <RootDocument>
+          <Outlet />
+          <Suspense fallback={null}>
+            <QueryDevtools initialIsOpen={false} />
+            <RouterDevtools />
+          </Suspense>
+        </RootDocument>
+      </ConvexProviderWithClerk>
     </ClerkProvider>
   );
 }
 
 function RootDocument({ children }: PropsWithChildren) {
   return (
-    <Html>
-      <Head>
+    <html>
+      <head>
         <Meta />
-      </Head>
-      <Body>
-        {children}
+      </head>
+      <body>
+        <SidebarProvider>
+          <Toaster position="top-center" richColors />
+          <AppSidebar />
+          <SidebarInset>
+            <main className="flex-1">
+              <Actionbar.Provider>
+                <Authenticated>
+                  <Actionbar.Root />
+                </Authenticated>
+                <div className="px-3">{children}</div>
+              </Actionbar.Provider>
+            </main>
+          </SidebarInset>
+        </SidebarProvider>
         <ScrollRestoration />
         <Scripts />
-      </Body>
-    </Html>
+      </body>
+    </html>
   );
 }

@@ -12,6 +12,7 @@ module.exports = {
     sourceType: 'module',
     project: true,
   },
+  ignorePatterns: ['coverage/**', 'convex/_generated/**'],
   rules: {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/consistent-type-imports': [
