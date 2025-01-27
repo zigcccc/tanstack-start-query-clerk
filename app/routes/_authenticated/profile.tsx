@@ -25,7 +25,7 @@ function RouteComponent() {
           elements: {
             rootBox: 'w-full h-[calc(100%-104px)]',
             cardBox: 'shadow-none mt-6 w-full h-full',
-            navbar: 'bg-transparent bg-none [&>div]:last:hidden',
+            navbar: 'bg-transparent bg-none last:[&>div]:hidden',
             scrollBox: 'rounded-none',
           },
         }}

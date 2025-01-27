@@ -87,7 +87,7 @@ export function AppSidebar() {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <SidebarMenuButton
-                      className="w-full justify-start data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+                      className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground w-full justify-start"
                       size="lg"
                     >
                       <Avatar className="mr-2">
@@ -96,13 +96,13 @@ export function AppSidebar() {
                       </Avatar>
                       <div className="flex flex-col items-start gap-0.5 leading-none">
                         <span className="font-medium">{user.user.fullName}</span>
-                        <span className="text-xs text-muted-foreground">
+                        <span className="text-muted-foreground text-xs">
                           {user.user.primaryEmailAddress?.emailAddress}
                         </span>
                       </div>
                     </SidebarMenuButton>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-[--radix-dropdown-menu-trigger-width]" side="top">
+                  <DropdownMenuContent align="start" className="w-(--radix-dropdown-menu-trigger-width)" side="top">
                     <DropdownMenuItem asChild>
                       <Link to="/workspace">
                         <User className="mr-2 h-4 w-4" />

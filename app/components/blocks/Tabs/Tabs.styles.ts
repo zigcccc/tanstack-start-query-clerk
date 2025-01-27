@@ -12,10 +12,10 @@ export const tabPanelStyle = tv({
 });
 
 export const tabStyle = tv({
-  base: 'rounded px-4 py-2 transition-colors hover:cursor-pointer focus:outline-none',
+  base: 'rounded px-4 py-2 transition-colors hover:cursor-pointer focus:outline-hidden',
   variants: {
     isSelected: {
-      true: 'bg-emerald-50 text-emerald-700 [text-shadow:_0_0_0.5px_theme(colors.emerald.700)]',
+      true: 'bg-emerald-50 text-emerald-700 [text-shadow:0_0_0.5px_var(--color-emerald-700)]',
       false: 'text-slate-600 hover:text-emerald-700',
     },
   },
