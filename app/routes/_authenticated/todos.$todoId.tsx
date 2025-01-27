@@ -168,7 +168,7 @@ function TodoDetails() {
         <Link to="/">Back to home</Link>
       </div>
       <div
-        className={cn('fixed bottom-6 right-5 rounded-lg border border-slate-100 p-4 shadow-2xl transition-all', {
+        className={cn('fixed right-5 bottom-6 rounded-lg border border-slate-100 p-4 shadow-2xl transition-all', {
           'left-[calc(var(--sidebar-width)+12px)]': sidebar.state === 'expanded',
           'left-[calc(var(--sidebar-width-icon)+36px)]': sidebar.state === 'collapsed',
         })}

@@ -9,12 +9,12 @@ export function NotFound({ children }: PropsWithChildren<NotFoundRouteProps>) {
       </div>
       <p className="flex flex-wrap items-center gap-2">
         <button
-          className="rounded bg-emerald-500 px-2 py-1 text-sm font-black uppercase text-white"
+          className="rounded bg-emerald-500 px-2 py-1 text-sm font-black text-white uppercase"
           onClick={() => window.history.back()}
         >
           Go back
         </button>
-        <Link className="rounded bg-cyan-600 px-2 py-1 text-sm font-black uppercase text-white" to="/">
+        <Link className="rounded bg-cyan-600 px-2 py-1 text-sm font-black text-white uppercase" to="/">
           Start Over
         </Link>
       </p>
