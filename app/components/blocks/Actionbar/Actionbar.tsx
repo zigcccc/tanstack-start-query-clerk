@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 
 import { SidebarTrigger } from '@/components/ui/sidebar';
 
-const ActionbarContext = createContext<{ actionbarRef: RefObject<HTMLElement> } | null>(null);
+const ActionbarContext = createContext<{ actionbarRef: RefObject<HTMLElement | null> } | null>(null);
 
 function useActionbar() {
   const context = useContext(ActionbarContext);
