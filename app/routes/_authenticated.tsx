@@ -1,4 +1,4 @@
-import { SignIn } from '@clerk/tanstack-start';
+import { SignIn } from '@clerk/tanstack-react-start';
 import { createFileRoute, Outlet } from '@tanstack/react-router';
 import { Authenticated } from 'convex/react';
 

@@ -1,8 +1,7 @@
-import { ClerkProvider, useAuth } from '@clerk/tanstack-start';
+import { ClerkProvider, useAuth } from '@clerk/tanstack-react-start';
 import { type ConvexQueryClient } from '@convex-dev/react-query';
 import { type QueryClient } from '@tanstack/react-query';
-import { createRootRouteWithContext, Outlet, ScrollRestoration } from '@tanstack/react-router';
-import { Meta, Scripts } from '@tanstack/start';
+import { createRootRouteWithContext, Outlet, Scripts, HeadContent } from '@tanstack/react-router';
 import { Authenticated } from 'convex/react';
 import { ConvexProviderWithClerk } from 'convex/react-clerk';
 import { Suspense, type PropsWithChildren } from 'react';
@@ -60,7 +59,7 @@ function RootDocument({ children }: PropsWithChildren) {
   return (
     <html>
       <head>
-        <Meta />
+        <HeadContent />
       </head>
       <body>
         <SidebarProvider>
@@ -77,7 +76,6 @@ function RootDocument({ children }: PropsWithChildren) {
             </main>
           </SidebarInset>
         </SidebarProvider>
-        <ScrollRestoration />
         <Scripts />
       </body>
     </html>

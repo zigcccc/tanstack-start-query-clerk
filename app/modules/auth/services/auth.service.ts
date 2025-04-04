@@ -1,5 +1,5 @@
-import { getAuth } from '@clerk/tanstack-start/server';
-import { createServerFn } from '@tanstack/start';
+import { getAuth } from '@clerk/tanstack-react-start/server';
+import { createServerFn } from '@tanstack/react-start';
 import { getWebRequest } from 'vinxi/http';
 
 const fetchClerkAuth = createServerFn({ method: 'GET' }).handler(async () => {

@@ -1,4 +1,4 @@
-import { useOrganizationList } from '@clerk/tanstack-start';
+import { useOrganizationList } from '@clerk/tanstack-react-start';
 import { convexQuery, useConvexMutation } from '@convex-dev/react-query';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useMutation, useSuspenseQuery } from '@tanstack/react-query';

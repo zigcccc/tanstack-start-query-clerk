@@ -1,4 +1,4 @@
-import { UserProfile } from '@clerk/tanstack-start';
+import { UserProfile } from '@clerk/tanstack-react-start';
 import { createFileRoute } from '@tanstack/react-router';
 
 import { Actionbar } from '@/components/blocks';
