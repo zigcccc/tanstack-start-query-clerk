@@ -1,10 +1,11 @@
-import { setupClerkTestingToken } from '@clerk/testing/playwright';
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await setupClerkTestingToken({ page });
+import { setupAuthUser } from './auth';
 
-  await page.goto('http://localhost:3000/');
+test('has title', async ({ page }) => {
+  await setupAuthUser(page);
+
+  await page.goto('/');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/TanStack Start \+ Clerk/);
