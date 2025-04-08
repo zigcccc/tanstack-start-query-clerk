@@ -8,6 +8,8 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      VITE_CONVEX_URL: ${{ secrets.CONVEX_URL }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
