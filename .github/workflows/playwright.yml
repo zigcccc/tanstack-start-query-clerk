@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VITE_CONVEX_URL: ${{ secrets.CONVEX_URL }}
+      CLERK_SECRET_KEY: ${{ secrets.CLERK_SECRET_KEY }}
+      VITE_CLERK_PUBLISHABLE_KEY: ${{ secrets.CLERK_PUBLISHABLE_KEY }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
