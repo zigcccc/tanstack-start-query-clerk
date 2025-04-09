@@ -2,17 +2,17 @@
   "cookies": [
     {
       "name": "__cf_bm",
-      "value": "WRcJtYzYHvAeiVf_VKYG3k5fybETacKh8M.yJjwiwEE-1744101856-1.0.1.1-nQk.aieYbdxSjZkW8rJ.6NXuTuI0iXDwcOCSUChh0bd2LLcn6RGbD8EsRNU9Z23MO_PjJzZqeCjflmUFpfb2SYose3LxYIMyfM.B1EDSNFQ",
+      "value": "C_bk2NksyNa.ISoxiyYOXRFKwP_2jLNhmou9KYyBRvQ-1744102412-1.0.1.1-b5O.EMIbZ8zTPsr00w9SDYYHegPaDndMKw1PpPZKhGj9Jx2Z0cp22JsrVySjYrSJ.kKrTwxp_BH32Sa3mOnH15pAr87pO7mX0XL9GbkTdec",
       "domain": ".lasting-sunbeam-46.clerk.accounts.dev",
       "path": "/",
-      "expires": 1744103656,
+      "expires": 1744104212,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_cfuvid",
-      "value": "hHNcKU8Lafxvo.VIp2gizAfIhFAxuacfDuV8VYx8G_g-1744101856131-0.0.1.1-604800000",
+      "value": "IK_qpeAPZ7PLyGL3HYF7urUz1YECILWa3j_i2a5476M-1744102412078-0.0.1.1-604800000",
       "domain": ".lasting-sunbeam-46.clerk.accounts.dev",
       "path": "/",
       "expires": -1,
@@ -25,67 +25,67 @@
       "value": "1",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1744101858,
+      "expires": 1744102414,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__clerk_db_jwt",
-      "value": "dvb_2vRJGOPAXWnjnfAcNHNSatwmyl0",
+      "value": "dvb_2vRKOBKi9zHUbBBWghtuEAvshkF",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1775637857,
+      "expires": 1775638413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__clerk_db_jwt_IG5hSe3G",
-      "value": "dvb_2vRJGOPAXWnjnfAcNHNSatwmyl0",
+      "value": "dvb_2vRKOBKi9zHUbBBWghtuEAvshkF",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1775637857,
+      "expires": 1775638413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__session_IG5hSe3G",
-      "value": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18ybnNkV09YWVowWUVZU1NmVktpR3hQOFNaM2YiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAiLCJleHAiOjE3NDQxMDE5MTcsImZ2YSI6WzAsLTFdLCJpYXQiOjE3NDQxMDE4NTcsImlzcyI6Imh0dHBzOi8vbGFzdGluZy1zdW5iZWFtLTQ2LmNsZXJrLmFjY291bnRzLmRldiIsIm5iZiI6MTc0NDEwMTg0Nywib3JnX2lkIjoib3JnXzJwN0VZMlBYM1J0MTRRZ2ZxM3hVdlpiQ3RIeiIsIm9yZ19wZXJtaXNzaW9ucyI6W10sIm9yZ19yb2xlIjoib3JnOmFkbWluIiwib3JnX3NsdWciOiJ0ZXN0b3JnIiwic2lkIjoic2Vzc18ydlJKR05TTVpJSUVkc2trdHpYVnRWZXA5R3UiLCJzdWIiOiJ1c2VyXzJudkQxQjhiWXB6d0ZKcjJoc01qRmFFMWFwdSJ9.JUHd24GL4QRj5cGip0a2QHyBgkqVPN0QYt4y19WtzRvQZWmMblld9mkbbHFtdOzkAZVoFuixBwEZv1yvzSAEmg9_tnBZyqcliUvgOEtMDv1Z3l-iBudjs3_LkotkHFu_9uHugMFibze5DGz6DMxEr9xvkXcpSe8Fn4hDy-sS-ElPgUxEtU1_Nr1UK7WedcyGo3bNnf9-sJiA5Tm4XEtZKdm_8vXDdp7VYL2_H10BsT22u6P0PWKmzPoG57KBCjH4Rcqfu8qPq_lNyBSCaHvdlW73j7ffIyD6JxcDJSU2T1WL5XT_8xXrHNu2MvE-Cqz_d2lJTCAE1UWMzv_4bq-5VQ",
+      "value": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18ybnNkV09YWVowWUVZU1NmVktpR3hQOFNaM2YiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAiLCJleHAiOjE3NDQxMDI0NzMsImZ2YSI6WzAsLTFdLCJpYXQiOjE3NDQxMDI0MTMsImlzcyI6Imh0dHBzOi8vbGFzdGluZy1zdW5iZWFtLTQ2LmNsZXJrLmFjY291bnRzLmRldiIsIm5iZiI6MTc0NDEwMjQwMywib3JnX2lkIjoib3JnXzJwN0VZMlBYM1J0MTRRZ2ZxM3hVdlpiQ3RIeiIsIm9yZ19wZXJtaXNzaW9ucyI6W10sIm9yZ19yb2xlIjoib3JnOmFkbWluIiwib3JnX3NsdWciOiJ0ZXN0b3JnIiwic2lkIjoic2Vzc18ydlJLT0VBS0dySUlZZ2h6cklkMEVJeGNVZ1EiLCJzdWIiOiJ1c2VyXzJudkQxQjhiWXB6d0ZKcjJoc01qRmFFMWFwdSJ9.nNxDaMH7E-TiqsVAMt1fjG47furYIu_nq4Re49Fd8XxQ3WLRgaUl40jzth4a4Qy3qCTGbmkLTU1gxAPpgI7vCJ7sn1TmUkc6BYpwyAgbSj0OJq79qQAYJUloa5_kpX6dI4dJjWqjk9DeWlvR7ouS_zTOaxtS_RbfF7fEJ6rE8Kp7MxRV8njXNI4wAerVs8pkx-JY0Y3zcaK52T0dIaLy-0QyEIh3IiN0g5MmXCuJaotGyihAvcBViDJ05toUM5MOJbJgMhixSb4A_pTK5B4ePFJ62R-96-uf4uvFXm5-hdw9_VydntGWgNJO3utZjGTxsxBw0cyeysyOYjNaLvrNhA",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1775637857,
+      "expires": 1775638413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__session",
-      "value": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18ybnNkV09YWVowWUVZU1NmVktpR3hQOFNaM2YiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAiLCJleHAiOjE3NDQxMDE5MTcsImZ2YSI6WzAsLTFdLCJpYXQiOjE3NDQxMDE4NTcsImlzcyI6Imh0dHBzOi8vbGFzdGluZy1zdW5iZWFtLTQ2LmNsZXJrLmFjY291bnRzLmRldiIsIm5iZiI6MTc0NDEwMTg0Nywib3JnX2lkIjoib3JnXzJwN0VZMlBYM1J0MTRRZ2ZxM3hVdlpiQ3RIeiIsIm9yZ19wZXJtaXNzaW9ucyI6W10sIm9yZ19yb2xlIjoib3JnOmFkbWluIiwib3JnX3NsdWciOiJ0ZXN0b3JnIiwic2lkIjoic2Vzc18ydlJKR05TTVpJSUVkc2trdHpYVnRWZXA5R3UiLCJzdWIiOiJ1c2VyXzJudkQxQjhiWXB6d0ZKcjJoc01qRmFFMWFwdSJ9.JUHd24GL4QRj5cGip0a2QHyBgkqVPN0QYt4y19WtzRvQZWmMblld9mkbbHFtdOzkAZVoFuixBwEZv1yvzSAEmg9_tnBZyqcliUvgOEtMDv1Z3l-iBudjs3_LkotkHFu_9uHugMFibze5DGz6DMxEr9xvkXcpSe8Fn4hDy-sS-ElPgUxEtU1_Nr1UK7WedcyGo3bNnf9-sJiA5Tm4XEtZKdm_8vXDdp7VYL2_H10BsT22u6P0PWKmzPoG57KBCjH4Rcqfu8qPq_lNyBSCaHvdlW73j7ffIyD6JxcDJSU2T1WL5XT_8xXrHNu2MvE-Cqz_d2lJTCAE1UWMzv_4bq-5VQ",
+      "value": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18ybnNkV09YWVowWUVZU1NmVktpR3hQOFNaM2YiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAiLCJleHAiOjE3NDQxMDI0NzMsImZ2YSI6WzAsLTFdLCJpYXQiOjE3NDQxMDI0MTMsImlzcyI6Imh0dHBzOi8vbGFzdGluZy1zdW5iZWFtLTQ2LmNsZXJrLmFjY291bnRzLmRldiIsIm5iZiI6MTc0NDEwMjQwMywib3JnX2lkIjoib3JnXzJwN0VZMlBYM1J0MTRRZ2ZxM3hVdlpiQ3RIeiIsIm9yZ19wZXJtaXNzaW9ucyI6W10sIm9yZ19yb2xlIjoib3JnOmFkbWluIiwib3JnX3NsdWciOiJ0ZXN0b3JnIiwic2lkIjoic2Vzc18ydlJLT0VBS0dySUlZZ2h6cklkMEVJeGNVZ1EiLCJzdWIiOiJ1c2VyXzJudkQxQjhiWXB6d0ZKcjJoc01qRmFFMWFwdSJ9.nNxDaMH7E-TiqsVAMt1fjG47furYIu_nq4Re49Fd8XxQ3WLRgaUl40jzth4a4Qy3qCTGbmkLTU1gxAPpgI7vCJ7sn1TmUkc6BYpwyAgbSj0OJq79qQAYJUloa5_kpX6dI4dJjWqjk9DeWlvR7ouS_zTOaxtS_RbfF7fEJ6rE8Kp7MxRV8njXNI4wAerVs8pkx-JY0Y3zcaK52T0dIaLy-0QyEIh3IiN0g5MmXCuJaotGyihAvcBViDJ05toUM5MOJbJgMhixSb4A_pTK5B4ePFJ62R-96-uf4uvFXm5-hdw9_VydntGWgNJO3utZjGTxsxBw0cyeysyOYjNaLvrNhA",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1775637857,
+      "expires": 1775638413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__client_uat_IG5hSe3G",
-      "value": "1744101857",
+      "value": "1744102412",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1775637857,
+      "expires": 1775638413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Strict"
     },
     {
       "name": "__client_uat",
-      "value": "1744101857",
+      "value": "1744102412",
       "domain": "127.0.0.1",
       "path": "/",
-      "expires": 1775637857,
+      "expires": 1775638413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Strict"
@@ -97,7 +97,7 @@
       "localStorage": [
         {
           "name": "__clerk_environment",
-          "value": "{\"value\":{\"object\":\"environment\",\"auth_config\":{\"claimed_at\":null,\"id\":\"\",\"object\":\"auth_config\",\"reverification\":false,\"single_session_mode\":true},\"display_config\":{\"object\":\"display_config\",\"after_create_organization_url\":\"http://127.0.0.1:3000\",\"after_join_waitlist_url\":\"http://127.0.0.1:3000\",\"after_leave_organization_url\":\"http://127.0.0.1:3000\",\"after_sign_in_url\":\"http://127.0.0.1:3000\",\"after_sign_out_all_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-in\",\"after_sign_out_one_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-in/choose\",\"after_sign_up_url\":\"http://127.0.0.1:3000\",\"after_switch_session_url\":\"http://127.0.0.1:3000\",\"application_name\":\"TodoApp\",\"branded\":true,\"captcha_heartbeat\":false,\"captcha_oauth_bypass\":[],\"captcha_provider\":\"turnstile\",\"captcha_public_key_invisible\":null,\"captcha_public_key\":null,\"captcha_widget_type\":null,\"clerk_js_version\":\"5\",\"create_organization_url\":\"https://lasting-sunbeam-46.accounts.dev/create-organization\",\"favicon_image_url\":\"\",\"home_url\":\"http://127.0.0.1:3000\",\"id\":\"display_config_2nsdWNtuuMhmwptd0XI7dQOuwTg\",\"instance_environment_type\":\"development\",\"logo_image_url\":\"\",\"organization_profile_url\":\"https://lasting-sunbeam-46.accounts.dev/organization\",\"preferred_sign_in_strategy\":\"password\",\"privacy_policy_url\":\"\",\"show_devmode_warning\":true,\"sign_in_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-in\",\"sign_up_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-up\",\"support_email\":\"zkrasovec@gmail.com\",\"terms_url\":\"\",\"theme\":{\"buttons\":{\"font_color\":\"#ffffff\",\"font_family\":\"\\\"Source Sans Pro\\\", sans-serif\",\"font_weight\":\"600\"},\"general\":{\"color\":\"#6c47ff\",\"padding\":\"1em\",\"box_shadow\":\"0 2px 8px rgba(0, 0, 0, 0.2)\",\"font_color\":\"#151515\",\"font_family\":\"\\\"Source Sans Pro\\\", sans-serif\",\"border_radius\":\"0.5em\",\"background_color\":\"#ffffff\",\"label_font_weight\":\"600\"},\"accounts\":{\"background_color\":\"#ffffff\"}},\"user_profile_url\":\"https://lasting-sunbeam-46.accounts.dev/user\",\"waitlist_url\":\"https://lasting-sunbeam-46.accounts.dev/waitlist\"},\"id\":\"\",\"maintenance_mode\":false,\"organization_settings\":{\"actions\":{\"admin_delete\":true},\"domains\":{\"enabled\":false,\"enrollment_modes\":[],\"default_role\":\"org:member\"},\"enabled\":true,\"max_allowed_memberships\":5},\"user_settings\":{\"actions\":{\"delete_self\":true,\"create_organization\":true,\"create_organizations_limit\":5},\"attributes\":{\"email_address\":{\"enabled\":true,\"required\":true,\"used_for_first_factor\":true,\"first_factors\":[\"email_code\"],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[\"email_code\"],\"verify_at_sign_up\":true,\"name\":\"email_address\"},\"phone_number\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"phone_number\"},\"username\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"username\"},\"web3_wallet\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"web3_wallet\"},\"first_name\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"first_name\"},\"last_name\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"last_name\"},\"password\":{\"enabled\":true,\"required\":true,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"password\"},\"authenticator_app\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":true,\"second_factors\":[\"totp\"],\"verifications\":[\"totp\"],\"verify_at_sign_up\":false,\"name\":\"authenticator_app\"},\"ticket\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"ticket\"},\"backup_code\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"backup_code\"},\"passkey\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"passkey\"}},\"passkey_settings\":{\"allow_autofill\":true,\"show_sign_in_button\":true},\"password_settings\":{\"disable_hibp\":false,\"min_length\":8,\"max_length\":72,\"require_special_char\":false,\"require_numbers\":false,\"require_uppercase\":false,\"require_lowercase\":false,\"show_zxcvbn\":false,\"min_zxcvbn_strength\":0,\"enforce_hibp_on_sign_in\":false,\"allowed_special_characters\":\"!\\\"#$%&'()*+,-./:;<=>?@[]^_`{|}~\"},\"saml\":{\"enabled\":false},\"sign_in\":{\"second_factor\":{\"required\":false}},\"sign_up\":{\"captcha_enabled\":false,\"captcha_widget_type\":\"smart\",\"custom_action_required\":false,\"progressive\":true,\"mode\":\"public\",\"legal_consent_enabled\":false},\"social\":{\"oauth_github\":{\"enabled\":true,\"required\":false,\"authenticatable\":true,\"block_email_subaddresses\":false,\"strategy\":\"oauth_github\",\"not_selectable\":false,\"deprecated\":false,\"name\":\"GitHub\",\"logo_url\":\"https://img.clerk.com/static/github.png\"},\"oauth_google\":{\"enabled\":true,\"required\":false,\"authenticatable\":true,\"block_email_subaddresses\":true,\"strategy\":\"oauth_google\",\"not_selectable\":false,\"deprecated\":false,\"name\":\"Google\",\"logo_url\":\"https://img.clerk.com/static/google.png\"}}},\"commerce_settings\":{\"enabled\":false}},\"exp\":1744188256681}"
+          "value": "{\"value\":{\"object\":\"environment\",\"auth_config\":{\"claimed_at\":null,\"id\":\"\",\"object\":\"auth_config\",\"reverification\":false,\"single_session_mode\":true},\"display_config\":{\"object\":\"display_config\",\"after_create_organization_url\":\"http://127.0.0.1:3000\",\"after_join_waitlist_url\":\"http://127.0.0.1:3000\",\"after_leave_organization_url\":\"http://127.0.0.1:3000\",\"after_sign_in_url\":\"http://127.0.0.1:3000\",\"after_sign_out_all_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-in\",\"after_sign_out_one_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-in/choose\",\"after_sign_up_url\":\"http://127.0.0.1:3000\",\"after_switch_session_url\":\"http://127.0.0.1:3000\",\"application_name\":\"TodoApp\",\"branded\":true,\"captcha_heartbeat\":false,\"captcha_oauth_bypass\":[],\"captcha_provider\":\"turnstile\",\"captcha_public_key_invisible\":null,\"captcha_public_key\":null,\"captcha_widget_type\":null,\"clerk_js_version\":\"5\",\"create_organization_url\":\"https://lasting-sunbeam-46.accounts.dev/create-organization\",\"favicon_image_url\":\"\",\"home_url\":\"http://127.0.0.1:3000\",\"id\":\"display_config_2nsdWNtuuMhmwptd0XI7dQOuwTg\",\"instance_environment_type\":\"development\",\"logo_image_url\":\"\",\"organization_profile_url\":\"https://lasting-sunbeam-46.accounts.dev/organization\",\"preferred_sign_in_strategy\":\"password\",\"privacy_policy_url\":\"\",\"show_devmode_warning\":true,\"sign_in_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-in\",\"sign_up_url\":\"https://lasting-sunbeam-46.accounts.dev/sign-up\",\"support_email\":\"zkrasovec@gmail.com\",\"terms_url\":\"\",\"theme\":{\"buttons\":{\"font_color\":\"#ffffff\",\"font_family\":\"\\\"Source Sans Pro\\\", sans-serif\",\"font_weight\":\"600\"},\"general\":{\"color\":\"#6c47ff\",\"padding\":\"1em\",\"box_shadow\":\"0 2px 8px rgba(0, 0, 0, 0.2)\",\"font_color\":\"#151515\",\"font_family\":\"\\\"Source Sans Pro\\\", sans-serif\",\"border_radius\":\"0.5em\",\"background_color\":\"#ffffff\",\"label_font_weight\":\"600\"},\"accounts\":{\"background_color\":\"#ffffff\"}},\"user_profile_url\":\"https://lasting-sunbeam-46.accounts.dev/user\",\"waitlist_url\":\"https://lasting-sunbeam-46.accounts.dev/waitlist\"},\"id\":\"\",\"maintenance_mode\":false,\"organization_settings\":{\"actions\":{\"admin_delete\":true},\"domains\":{\"enabled\":false,\"enrollment_modes\":[],\"default_role\":\"org:member\"},\"enabled\":true,\"max_allowed_memberships\":5},\"user_settings\":{\"actions\":{\"delete_self\":true,\"create_organization\":true,\"create_organizations_limit\":5},\"attributes\":{\"email_address\":{\"enabled\":true,\"required\":true,\"used_for_first_factor\":true,\"first_factors\":[\"email_code\"],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[\"email_code\"],\"verify_at_sign_up\":true,\"name\":\"email_address\"},\"phone_number\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"phone_number\"},\"username\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"username\"},\"web3_wallet\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"web3_wallet\"},\"first_name\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"first_name\"},\"last_name\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"last_name\"},\"password\":{\"enabled\":true,\"required\":true,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"password\"},\"authenticator_app\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":true,\"second_factors\":[\"totp\"],\"verifications\":[\"totp\"],\"verify_at_sign_up\":false,\"name\":\"authenticator_app\"},\"ticket\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"ticket\"},\"backup_code\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"backup_code\"},\"passkey\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"name\":\"passkey\"}},\"passkey_settings\":{\"allow_autofill\":true,\"show_sign_in_button\":true},\"password_settings\":{\"disable_hibp\":false,\"min_length\":8,\"max_length\":72,\"require_special_char\":false,\"require_numbers\":false,\"require_uppercase\":false,\"require_lowercase\":false,\"show_zxcvbn\":false,\"min_zxcvbn_strength\":0,\"enforce_hibp_on_sign_in\":false,\"allowed_special_characters\":\"!\\\"#$%&'()*+,-./:;<=>?@[]^_`{|}~\"},\"saml\":{\"enabled\":false},\"sign_in\":{\"second_factor\":{\"required\":false}},\"sign_up\":{\"captcha_enabled\":false,\"captcha_widget_type\":\"smart\",\"custom_action_required\":false,\"progressive\":true,\"mode\":\"public\",\"legal_consent_enabled\":false},\"social\":{\"oauth_github\":{\"enabled\":true,\"required\":false,\"authenticatable\":true,\"block_email_subaddresses\":false,\"strategy\":\"oauth_github\",\"not_selectable\":false,\"deprecated\":false,\"name\":\"GitHub\",\"logo_url\":\"https://img.clerk.com/static/github.png\"},\"oauth_google\":{\"enabled\":true,\"required\":false,\"authenticatable\":true,\"block_email_subaddresses\":true,\"strategy\":\"oauth_google\",\"not_selectable\":false,\"deprecated\":false,\"name\":\"Google\",\"logo_url\":\"https://img.clerk.com/static/google.png\"}}},\"commerce_settings\":{\"enabled\":false}},\"exp\":1744188812557}"
         }
       ]
     }
