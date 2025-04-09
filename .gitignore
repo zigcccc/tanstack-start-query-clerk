@@ -13,3 +13,5 @@ coverage
 /e2e/.clerk
 
 .env.local
+
+e2e/auth/.clerk
