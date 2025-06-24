@@ -1,11 +1,11 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", ".eslintrc.cjs", "tailwind.config.cjs", "postcss.config.cjs", "vitest.config.ts"],
+  "include": ["**/*.ts", "**/*.tsx", ".eslintrc.cjs", "vite.config.ts", "tailwind.config.cjs", "postcss.config.cjs", "vitest.config.ts"],
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "bundler",
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "isolatedModules": true,
     "resolveJsonModule": true,
@@ -15,7 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"]
+      "@/*": ["src/*"]
     },
     "noEmit": true
   }

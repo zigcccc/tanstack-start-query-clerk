@@ -4,6 +4,15 @@
   "eslint.debug": false,
   "prettier.configPath": ".prettierrc",
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },

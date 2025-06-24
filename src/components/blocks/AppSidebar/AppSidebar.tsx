@@ -2,6 +2,7 @@ import { useUser } from '@clerk/clerk-react';
 import { Link } from '@tanstack/react-router';
 import { Authenticated } from 'convex/react';
 import { ListIcon, CircleDotDashedIcon, CheckIcon, User, LogOut } from 'lucide-react';
+import { useSignOut } from 'src/hooks/use-sign-out';
 
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import {
@@ -24,7 +25,6 @@ import {
   SidebarFooter,
   SidebarRail,
 } from '@/components/ui/sidebar';
-import { useSignOut } from '@/hooks/use-sign-out';
 
 export function AppSidebar() {
   const user = useUser();

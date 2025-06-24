@@ -2,10 +2,10 @@ import { useUser } from '@clerk/clerk-react';
 import { clsx } from 'clsx';
 import { Authenticated } from 'convex/react';
 import { LogOutIcon } from 'lucide-react';
+import { useSignOut } from 'src/hooks/use-sign-out';
 
 import { Button } from '@/components/atoms';
 import { SidebarTrigger } from '@/components/ui/sidebar';
-import { useSignOut } from '@/hooks/use-sign-out';
 
 export function Navbar() {
   const authUser = useUser();

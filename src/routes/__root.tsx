@@ -8,6 +8,7 @@ import { Suspense, type PropsWithChildren } from 'react';
 import { Toaster } from 'sonner';
 
 import { Actionbar, AppSidebar } from '@/components/blocks';
+import { DefaultCatchBoundary } from '@/components/DefaultCatchBoundary';
 import { QueryDevtools, RouterDevtools } from '@/components/devtools';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import { authService } from '@/modules/auth';
@@ -33,6 +34,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient; conv
   beforeLoad: async () => {
     const { userId } = await authService.getAuthUser();
     return { userId };
+  },
+  errorComponent: (props) => {
+    return (
+      <RootDocument>
+        <DefaultCatchBoundary {...props} />
+      </RootDocument>
+    );
   },
   component: RootComponent,
 });

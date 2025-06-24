@@ -1,5 +1,5 @@
-import { type ReactElement } from 'react';
-import { type AriaTabPanelProps, type AriaTabListOptions, type Key } from 'react-aria';
+import { type JSX } from 'react';
+import { type AriaTabPanelProps, type AriaTabListOptions, type Key, type AriaTabListProps } from 'react-aria';
 import { type Node, type TabListState } from 'react-stately';
 
 export type TabProps<T extends object> = { item: Node<T>; state: TabListState<T> };
@@ -10,7 +10,7 @@ export type TabPanelProps<T extends object> = AriaTabPanelProps & {
 };
 
 export type TabsProps<T extends object> = AriaTabListOptions<T> & {
-  children: ReactElement | ReactElement[];
+  children: AriaTabListProps<T>['children'];
   className?: string;
   renderTabPanelContent?: (selectedKey: Key) => JSX.Element;
 };

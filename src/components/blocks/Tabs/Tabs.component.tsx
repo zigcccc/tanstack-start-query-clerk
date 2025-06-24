@@ -1,5 +1,5 @@
 import { type ReactNode } from '@tanstack/react-router';
-import { useMemo, useRef } from 'react';
+import { type JSX, useMemo, useRef } from 'react';
 import { useTab, useTabList, useTabPanel } from 'react-aria';
 import { Item, type ItemProps, useTabListState } from 'react-stately';
 

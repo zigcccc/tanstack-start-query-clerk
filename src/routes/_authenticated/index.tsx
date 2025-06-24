@@ -49,7 +49,7 @@ function Home() {
     mutationFn: useConvexMutation(api.todos.queries.toggleCompleted),
     onMutate: async ({ id }: { id: Id<'todos'> }) => {
       const { queryKey } = convexQuery(api.todos.queries.list, { filter });
-      const allTodos = await queryClient.getQueryData<Todo[]>(queryKey);
+      const allTodos = queryClient.getQueryData<Todo[]>(queryKey);
       const todoIdx = allTodos?.findIndex(({ _id }) => _id === id);
 
       if (todoIdx) {
